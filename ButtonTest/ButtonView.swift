@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct ButtonView: View {
+    let text: String
+    let color: Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            greet(sentence: text)
+        }) {
+            ZStack {
+                Image(getImage(imageString: text))
+                    .resizable()
+                Rectangle()
+                    .foregroundColor(color.opacity(0.40))
+                VStack {
+                    HStack {
+                        Text(text)
+                            .foregroundColor(.black)
+                            .font(.title)
+                        Spacer()
+                    }
+                    Spacer()
+                }
+                .padding()
+            }
+            .frame(width: 360, height: 200)
+            .cornerRadius(10)
+        }
+    }
+}
+
+func getImage(imageString: String) -> String {
+    switch imageString {
+    case "Animals": return "kitten"
+    case "Transport": return "airplane"
+    default:
+        return "test"
     }
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(text: "Test", color: Color.yellow)
 }

@@ -14,6 +14,9 @@
 		251AD6CB2BF7D0B5004037D2 /* ButtonTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251AD6CA2BF7D0B5004037D2 /* ButtonTestTests.swift */; };
 		251AD6D52BF7D0B5004037D2 /* ButtonTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251AD6D42BF7D0B5004037D2 /* ButtonTestUITests.swift */; };
 		251AD6D72BF7D0B5004037D2 /* ButtonTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251AD6D62BF7D0B5004037D2 /* ButtonTestUITestsLaunchTests.swift */; };
+		251AD6E52BF7D0CD004037D2 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 251AD6E32BF7D0CD004037D2 /* kitten.jpg */; };
+		2542E51A2BF7FD1200213677 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2542E5192BF7FD1200213677 /* ButtonView.swift */; };
+		2542E51D2BF7FE8000213677 /* airplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2542E51B2BF7FE8000213677 /* airplane.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		251AD6D02BF7D0B5004037D2 /* ButtonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251AD6D42BF7D0B5004037D2 /* ButtonTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestUITests.swift; sourceTree = "<group>"; };
 		251AD6D62BF7D0B5004037D2 /* ButtonTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		251AD6E32BF7D0CD004037D2 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
+		2542E5192BF7FD1200213677 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		2542E51B2BF7FE8000213677 /* airplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airplane.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,8 @@
 		251AD6AD2BF7D0B3004037D2 = {
 			isa = PBXGroup;
 			children = (
+				2542E51C2BF7FE8000213677 /* transport */,
+				251AD6E42BF7D0CD004037D2 /* animals */,
 				251AD6B82BF7D0B3004037D2 /* ButtonTest */,
 				251AD6C92BF7D0B5004037D2 /* ButtonTestTests */,
 				251AD6D32BF7D0B5004037D2 /* ButtonTestUITests */,
@@ -98,6 +106,7 @@
 				251AD6BB2BF7D0B3004037D2 /* ContentView.swift */,
 				251AD6BD2BF7D0B5004037D2 /* Assets.xcassets */,
 				251AD6BF2BF7D0B5004037D2 /* Preview Content */,
+				2542E5192BF7FD1200213677 /* ButtonView.swift */,
 			);
 			path = ButtonTest;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				251AD6D62BF7D0B5004037D2 /* ButtonTestUITestsLaunchTests.swift */,
 			);
 			path = ButtonTestUITests;
+			sourceTree = "<group>";
+		};
+		251AD6E42BF7D0CD004037D2 /* animals */ = {
+			isa = PBXGroup;
+			children = (
+				251AD6E32BF7D0CD004037D2 /* kitten.jpg */,
+			);
+			path = animals;
+			sourceTree = "<group>";
+		};
+		2542E51C2BF7FE8000213677 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				2542E51B2BF7FE8000213677 /* airplane.jpg */,
+			);
+			path = transport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				251AD6C12BF7D0B5004037D2 /* Preview Assets.xcassets in Resources */,
+				251AD6E52BF7D0CD004037D2 /* kitten.jpg in Resources */,
 				251AD6BE2BF7D0B5004037D2 /* Assets.xcassets in Resources */,
+				2542E51D2BF7FE8000213677 /* airplane.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +286,7 @@
 			files = (
 				251AD6BC2BF7D0B3004037D2 /* ContentView.swift in Sources */,
 				251AD6BA2BF7D0B3004037D2 /* ButtonTestApp.swift in Sources */,
+				2542E51A2BF7FD1200213677 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
